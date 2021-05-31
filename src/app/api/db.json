@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jhon",
+      "gender": "Male",
+      "role": "Teacher"
+    },
+    {
+      "id": 2,
+      "name": "Doe",
+      "gender": "Male",
+      "role": "Teacher"
+    },
+    {
+      "id": 3,
+      "name": "Bruce",
+      "gender": "Male",
+      "role": "Student"
+    },
+    {
+      "id": 5,
+      "name": "Smith",
+      "gender": "Female",
+      "role": "Teacher"
+    },
+    {
+      "id": 6,
+      "name": "Mike",
+      "gender": "Female",
+      "role": "Teacher"
+    },
+    {
+      "id": 7,
+      "name": "Krish",
+      "gender": "Male",
+      "role": "Student"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "role": "Teacher"
+    },
+    {
+      "role": "Student",
+      "id": 3
+    }
+  ]
+}

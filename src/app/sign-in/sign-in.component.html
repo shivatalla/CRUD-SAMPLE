@@ -1,0 +1,30 @@
+<div class="bg">
+<div class="card signIn bg-white px-4 py-5 shadow-sm border border-4 shadow-lg">
+    <h2 class="text-primary text-center mb-4">My School</h2>
+    <small class="text-danger text-center" *ngIf="errMsg">Invalid Credentials</small>
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field>
+      <mat-label>User Name</mat-label>
+      <input matInput  autocomplete="off" formControlName="name" id="name"  value="">
+     
+    </mat-form-field>
+    <div *ngIf="f.name.touched && f.name.invalid" class="small text-danger">
+      <div *ngIf="f.name.errors.required">Name is required.</div>     
+  </div>
+    <br>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Ex. admin@123" type="password" autocomplete="new-password" formControlName="password" id="password">
+       
+      </mat-form-field>
+      <div *ngIf="f.password.touched && f.password.invalid" class="small text-danger">
+        <div *ngIf="f.password.errors.required">Password is required.</div>
+        <div *ngIf="f.password.errors.minlength">Password should be 6 character.</div>
+    </div>
+      <br>
+      <div class="text-end">
+      <button mat-raised-button color="primary" class="md-button-right" [disabled]='form.invalid'>Login</button>
+    </div>
+    </form>
+</div>
+</div>

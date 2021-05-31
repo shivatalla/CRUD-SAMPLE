@@ -1,0 +1,34 @@
+.bg{
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background: url('./../../assets/img/bg.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.signIn{
+   margin: auto;
+   position: absolute;
+   top:20%;
+   right:10%;
+   //transform: translate(-50%, -30%);
+    width: 350px;
+    max-width: 350px;
+    opacity: 0.9;
+}
+mat-form-field{
+    width:100% !important;
+}
+.navbar{display: none !important;position: relative; z-index: -1;}
+@media screen and (max-width:767px) {
+    .signIn{
+        margin: auto;
+        position: absolute;
+        top:20%;
+        right:1%;
+        
+     }
+}
